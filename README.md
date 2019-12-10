@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## vue多页
 ## 项目目录说明
 ```
@@ -45,3 +46,6 @@ npm run build
 
 ```
 
+=======
+# mars-multipage-w4
+>>>>>>> aa19ae13da618f5a0d6f955fd126cfd0c3b85f4f
