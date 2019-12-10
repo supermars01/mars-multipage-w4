@@ -1,0 +1,21 @@
+/* https://github.com/jonathantneal/postcss-advanced-variables 可以使用sass语法*/
+body {
+  background-color: blue;
+}
+.parent {
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  .l {
+    width: 200px;
+    height: 100%;
+    background-color: red;
+    margin-right: 10px;
+  }
+  .r {
+    width: calc(100%-200px);
+    height: 100%;
+    background-color: green;
+  }
+}

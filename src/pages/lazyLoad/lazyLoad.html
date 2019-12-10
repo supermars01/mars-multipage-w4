@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+  <link rel="shortcut icon" type="image/png" href="https://s1.pstatp.com/ee/bytedance-home/static/img/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="字节跳动, 字节, 字节跳动官网, ByteDance, 抖音, 今日头条, tiktok">
+  <meta name="description" content="字节跳动成立于2012年3月，目前公司的产品和服务已覆盖全球150个国家和地区、75个语种，曾在40多个国家和地区位居应用商店总榜前列。">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>首页</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+  <div class="app-shell-loading">
+    <div class="app-shell-spinner">
+      <div class="app-shell-bounce1"></div>
+      <div class="app-shell-bounce2"></div>
+      <div class="app-shell-bounce3"></div>
+    </div>
+  </div>
+  <div class="app-shell-loaded app-shell-hide" id="app">
+
+    <!--引入通用的导航部分-->
+    #include('../../tpl/header.html')
+    <div class="container">
+      <style>
+        .vivify {
+          width: 200px;
+          height: 2000px;
+          background-color: blue;
+        }
+      </style>
+      <div class="vivify spin">asdasdas</div>
+      <!-- 以上为vivify动画http://vivify.mkcreative.cz/ -->
+      <!-- http://www.imagehover.io/ -->
+      <div class="columns">
+        <div class="column is-half">
+          <figure class="image is-1by1 is-480x480">
+            <img class="lazyload" data-src="../../../static/images/480x480.png"
+              data-srcset="../../../static/images/480x480.png 1x,../../../static/images/256x256.png 2x">
+          </figure>
+          <a class="button is-primary  is-outlined">普通图标</a>
+          <p class="has-text-centered-touch">阿三大a三大四</p>
+        </div>
+        <div class="column">
+          <figure class="image is-4by3 is-640x480">
+            <img class="lazyload" data-src="../../../static/images/640x480.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-4by3 is-640x480">
+            <img class="lazyload" data-src="../../../static/images/640x480.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-4by3 is-640x480">
+            <img class="lazyload" data-src="../../../static/images/640x480.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image is-4by3 is-640x480">
+            <img class="lazyload" data-src="../../../static/images/640x480.png">
+          </figure>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="width: 200px;">
+            <p class="title is-5">Narrow column</p>
+            <p class="subtitle">This column is only 200px wide.</p>
+          </div>
+        </div>
+        <div class="column is-4 has-text-centered is-offset-4" style="background-color: red;">
+          我就是一个空行 colum
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <p class="title is-5">Flexible column</p>
+            <p class="subtitle">This column will take up the remaining space available.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--引入通用的底部栏-->
+    #include('../../tpl/footer.html')
+  </div>
+  <div class="app-shell-error app-shell-hide">
+    不支持 IE 11 以下的浏览器
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/lazysizes/5.1.2/lazysizes.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/font-awesome/5.11.2/js/all.min.js"></script>
+</body>
+
+</html>

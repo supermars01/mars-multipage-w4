@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+  <link rel="shortcut icon" type="image/png" href="https://s1.pstatp.com/ee/bytedance-home/static/img/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="字节跳动, 字节, 字节跳动官网, ByteDance, 抖音, 今日头条, tiktok">
+  <meta name="description" content="字节跳动成立于2012年3月，目前公司的产品和服务已覆盖全球150个国家和地区、75个语种，曾在40多个国家和地区位居应用商店总榜前列。">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>首页</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+  <div class="app-shell-loading">
+    <div class="app-shell-spinner">
+      <div class="app-shell-bounce1"></div>
+      <div class="app-shell-bounce2"></div>
+      <div class="app-shell-bounce3"></div>
+    </div>
+  </div>
+  <div class="app-shell-loaded app-shell-hide" id="app">
+    <!--引入通用的导航部分-->
+    #include('../../tpl/header.html')
+    <section class="hero is-success is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Full Height title
+          </h1>
+          <h2 class="subtitle">
+            Full Height subtitle
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-dark is-bold is-fullheight">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Vertical...</p>
+                <p class="subtitle">Top tile</p>
+                <div class="content">
+                  <figure class="image is-2by1 wow bounceInLeft" data-wow-delay="1s"><img
+                      src="../../../static/images/640x320.png"></figure>
+                </div>
+              </article>
+              <article class="tile is-child notification is-warning">
+                <p class="title">...tiles</p>
+                <p class="subtitle">Bottom tile</p>
+                <div class="content">
+                  <figure class="image is-2by1 wow rollIn" data-wow-delay="1s"><img
+                      src="../../../static/images/640x320.png"></figure>
+                </div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info" data-wow-delay="1s">
+                <p class="title">Middle tile</p>
+                <p class="subtitle">With an image</p>
+                <div class="content">
+                  <figure class="image is-4by3 wow bounceIn">
+                    <img src="../../../static/images/640x480.png">
+                    <!-- <div class="iimg"></div> -->
+                  </figure>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Wide tile</p>
+              <p class="subtitle">Aligned with the right tile</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Tall tile</p>
+              <p class="subtitle">With even more contentAligned </p>
+              <div class="content">
+                <figure class="image is-2by1 wow flipInX" data-wow-delay="1s"><img
+                    src="../../../static/images/640x320.png"></figure>
+                <figure class="image is-2by1 wow lightSpeedIn" data-wow-delay="1s"><img
+                    src="../../../static/images/640x320.png"></figure>
+                <figure class="image is-3by2 wow flash"><img src="../../../static/images/480x320.png"></figure>
+                <figure class="image is-3by2 wow zoomIn" data-wow-delay="1s"><img
+                    src="../../../static/images/480x320.png"></figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-warning is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Full Height title
+          </h1>
+          <h2 class="subtitle">
+            <div class="dropdown">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>Dropdown button</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Dropdown item
+                  </a>
+                  <a class="dropdown-item">
+                    Other dropdown item
+                  </a>
+                  <a href="#" class="dropdown-item is-active">
+                    Active dropdown item
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Other dropdown item
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    With a divider
+                  </a>
+                </div>
+              </div>
+            </div>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!--引入通用的底部栏-->
+    #include('../../tpl/footer.html')
+  </div>
+  <div class="app-shell-error app-shell-hide">
+    不支持 IE 11 以下的浏览器
+  </div>
+  <!-- <%=require('html-withimg-loader!../tpl/footer.html')%> -->
+  <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdn.bootcss.com/font-awesome/5.11.2/js/all.min.js"></script>
+</body>
+
+</html>
